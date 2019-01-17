@@ -9,6 +9,12 @@ body {
   width: 100%;
 }
 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
 iframe{
     overflow:hidden;
 }
@@ -28,6 +34,6 @@ iframe{
 }
 
 .phone_body2 {
-  width:360px;
+  width:378px;
   height:780px;
 }

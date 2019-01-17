@@ -8,28 +8,35 @@ body {
   background-color: #1e1e1e;
   font-size: 0.9em;
   font-family: Arial;
-  color: #fff;
-  margin: auto;
+  margin: 0;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
 }
 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
 .top_phone_box {
-  margin: auto;
-  position: static;
+  margin-left: 22%;
+  margin-right: 22%;
+  position: fixed;
   background-color: #47474c;
   width: 50%;
   height: 2rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  margin-bottom: 1rem;
 }
 
-.top_info {
-  width: 100%;
-  margin: auto;
-  height: auto;
-  margin-bottom: 1rem;
+.top_phone_box_speaker {
+  background-color: #6e6e72;
+  height: 0.25rem;
+  margin-left: 38%;
+  margin-right: 38%;
+  top: 35%;
+  position: relative;
 }
 
 #szukaj {
@@ -48,27 +55,126 @@ body {
   background:none;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
+.topinfo {
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
-li {
-  float: left;
-}
 
 .loggedas {
-  padding: 0.5rem;
   background-color: #393939;
-  font-size: 0.7em;
+  font-size: 0.8em;
+  height: auto;
+  padding: 0.65rem;
   border-radius: 0.4rem;
+  float: right;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .profilepic{
-margin: -0.2rem;
-margin-right: 0.2rem;
-border-radius: 0.2rem;
-border: #f86842 solid 0.15rem;
-vertical-align:middle;
+  width: 1.7rem;
+  margin: -0.4rem;
+  margin-right: 0.5rem;
+  border-radius: 0.2rem;
+  border: #f86842 solid 0.15rem;
+}
+
+
+/********************************
+
+
+*************************/
+ul {
+	-webkit-padding-start: 0px;
+	list-style-type: none;
+}
+
+.a {
+	background:#fff;
+	height: 4rem;
+	width:100%;
+	margin:auto;
+	border-radius: 0.3rem 0.3rem 0 0 ;
+  padding: 0.5rem;
+  display: flex;
+  align-items:center;
+  margin-top: 0.6rem;
+}
+
+.b {
+	background:#373737;
+	color: #fff;
+	width:100%;
+  padding: 0.5rem;
+  padding-bottom: 0;
+	margin:auto;
+	display:none;
+}
+
+.c {
+	background:#373737;
+	height:0.4rem;
+	width:100%;
+	border-radius: 0 0 0.3rem 0.3rem ;
+}
+
+.graimg {
+	border-radius: 50%;
+	border: solid 0.20rem #e85b4f;
+	width:3rem;
+	height:3rem;
+	float:left;
+	background-position:center;
+	background-size: 3rem;
+}
+
+.graname {
+	float:left;
+	font-size:1rem;
+}
+
+#platforma {
+	padding: 0.3rem;
+	border:0;
+	border-radius: 0.3rem;
+	text-transform:uppercase;
+	font-size:0.55em;
+	z-index:2;
+  position: absolute;
+  right: 0;
+  margin-right: 1.2rem;
+}
+
+.pc { background-color:#373737; color:#acacac; }
+.xbox { background-color:#158915; color: #94e194; }
+.ps { background-color:#004888; color:#64b4fb;}
+.and { background-color:#61d233; color:#dbffcd;}
+.ios{ background-color:#949494; color: #000; }
+.ns { background-color:#aa1f1f;color: #f58686;}
+
+
+#ustawienia {
+	color: #fefefe;
+	background:#696464;
+	border:0;
+	border-radius: 0.3rem;
+	text-transform:uppercase;
+	font-size:0.8em;
+  padding: 0.4rem;
+  margin: 0.1rem;
+
+}
+
+#swp{
+	padding: 0.2rem;
+	color: #8f4223;
+	background:#ff8c15;
+	background: linear-gradient(#ff7b16,#ffcf56);
+	border:0;
+	border-top: 0.15rem solid #ff5b20;
+	border-radius: 0.3rem;
+	text-transform:uppercase;
+	float:right;
 }
