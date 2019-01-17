@@ -7,6 +7,10 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
+  background-image: url(x/images/logo_reklama.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:10%;
 }
 
 * {
@@ -15,7 +19,7 @@ body {
      box-sizing: border-box;
 }
 
-iframe{
+iframe {
     overflow:hidden;
 }
 
@@ -30,10 +34,17 @@ iframe{
   overflow: hidden;
   border-radius: 2.5rem;
   box-shadow: 0 0 0 1rem #47474c,
-              0 0 0 1.3rem #ff7447;
+              0 0 0 1.3rem #ff7447,
+              0 0 6rem 0.5rem #000,
+              0 0 3rem 1rem #ff7447;
 }
 
 .phone_body2 {
-  width:378px;
+  width:360px;
   height:780px;
+}
+
+.logo_reklama {
+  position: fixed;
+  margin: 50%;
 }
