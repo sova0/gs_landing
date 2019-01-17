@@ -1,0 +1,74 @@
+
+/**
+1 rem
+tekst 1 em
+**/
+
+body {
+  background-color: #1e1e1e;
+  font-size: 0.9em;
+  font-family: Arial;
+  color: #fff;
+  margin: auto;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+.top_phone_box {
+  margin: auto;
+  position: static;
+  background-color: #47474c;
+  width: 50%;
+  height: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.top_info {
+  width: 100%;
+  margin: auto;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+#szukaj {
+	width:100%;
+  background-color:#373737;
+  border-radius: 0.8rem;
+  color:#d1d1d1;
+}
+
+#szukaj2 {
+  margin: 0.6rem;
+  margin-left: 1rem;
+	color:#d1d1d1;
+	font-size: 0.8rem;
+  border: 0;
+  background:none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+.loggedas {
+  padding: 0.5rem;
+  background-color: #393939;
+  font-size: 0.7em;
+  border-radius: 0.4rem;
+}
+
+.profilepic{
+margin: -0.2rem;
+margin-right: 0.2rem;
+border-radius: 0.2rem;
+border: #f86842 solid 0.15rem;
+vertical-align:middle;
+}
