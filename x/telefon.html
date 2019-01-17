@@ -22,10 +22,32 @@ $(this).next('.b').slideDown('fast');}
 });
 </script>
 
-  </head>
-<body>
-<div class="TOP_BODY">
+<!--- ZEGAREK --->
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('godzina_hud').innerHTML =
+  h + ":" + m;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
 
+<!--- END ZEGAREK --->
+  </head>
+
+<body onload="startTime()">
+<div class="TOP_BODY">
+<div id="godzina_hud"></div>
+<div id="batery"><div id="procentbatery"></div></div>
   <div class="top_phone_box">
     <div class="top_phone_box_speaker"></div>
   </div>
@@ -33,10 +55,12 @@ $(this).next('.b').slideDown('fast');}
   <div style="padding-top:2.7rem;"></div>
 
   <div class="topinfo">
-    <img src="images/logotyp.png" alt="Logo" >
-    <div class="loggedas"><img src="images/profilepic.png" class="profilepic">Krystian</div>
-  </div>
-
+    <img src="images/logotyp.png" alt="Logo" style="float:left; width: 33%;" >
+    <div class="top_right">
+      <p class="log">Zalogowany jako:</p>
+      <div class="loggedas"><img src="images/profilepic.png" class="profilepic">Krystian</div>
+    </div>
+</div>
   <div id="szukaj">
     <input type="text" id="szukaj2" placeholder="Search for a game...">
   </div>
